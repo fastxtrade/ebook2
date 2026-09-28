@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -49,7 +50,7 @@
 
     /* =========================
        HERO
-    ========================= */
+    ========================== */
 
     .hero {
       background: #f7f8fa;
@@ -104,7 +105,59 @@
       color: #344054;
     }
 
-    /* Ebook Mockup */
+
+    /* =========================
+       HERO BUTTONS
+    ========================== */
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .hero-buy-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #111827;
+      color: #ffffff;
+      padding: 13px 22px;
+      border-radius: 9px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .hero-buy-btn:hover {
+      background: #263244;
+      transform: translateY(-1px);
+    }
+
+    .hero-offer-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      color: #111827;
+      border: 1px solid #d0d5dd;
+      padding: 13px 22px;
+      border-radius: 9px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .hero-offer-btn:hover {
+      background: #f8fafc;
+      transform: translateY(-1px);
+    }
+
+
+    /* =========================
+       EBOOK MOCKUP
+    ========================== */
 
     .ebook-area {
       display: flex;
@@ -166,9 +219,10 @@
       color: #667085;
     }
 
+
     /* =========================
        COMMON
-    ========================= */
+    ========================== */
 
     section {
       padding: 75px 0;
@@ -190,9 +244,10 @@
       font-size: 17px;
     }
 
+
     /* =========================
        INTRO
-    ========================= */
+    ========================== */
 
     .intro {
       background: #ffffff;
@@ -224,9 +279,10 @@
       color: #344054;
     }
 
+
     /* =========================
        QUESTION CARDS
-    ========================= */
+    ========================== */
 
     .problem-section {
       background: #f8fafc;
@@ -255,9 +311,10 @@
       font-weight: 500;
     }
 
+
     /* =========================
        GREEN HIGHLIGHT
-    ========================= */
+    ========================== */
 
     .highlight-section {
       padding-top: 35px;
@@ -285,9 +342,10 @@
       font-size: 16px;
     }
 
+
     /* =========================
        LEARNING CARDS
-    ========================= */
+    ========================== */
 
     .learning-section {
       background: #ffffff;
@@ -328,9 +386,10 @@
       font-size: 15px;
     }
 
+
     /* =========================
        WHO IS IT FOR
-    ========================= */
+    ========================== */
 
     .audience-section {
       background: #f8fafc;
@@ -352,9 +411,10 @@
       color: #344054;
     }
 
+
     /* =========================
        WHAT YOU GET
-    ========================= */
+    ========================== */
 
     .get-section {
       background: #ffffff;
@@ -386,9 +446,10 @@
       border-bottom: none;
     }
 
+
     /* =========================
        OFFER
-    ========================= */
+    ========================== */
 
     .offer-section {
       background: #f7f8fa;
@@ -451,9 +512,10 @@
       margin-bottom: 30px;
     }
 
+
     /* =========================
        BUTTONS
-    ========================= */
+    ========================== */
 
     .cta-buttons {
       display: grid;
@@ -491,9 +553,10 @@
       font-size: 13px;
     }
 
+
     /* =========================
        PAYMENT SUCCESS
-    ========================= */
+    ========================== */
 
     .success-section {
       background: #ffffff;
@@ -527,9 +590,10 @@
       font-weight: 700;
     }
 
+
     /* =========================
        TRUST
-    ========================= */
+    ========================== */
 
     .trust-section {
       padding-top: 40px;
@@ -564,9 +628,10 @@
       color: #667085;
     }
 
+
     /* =========================
        DISCLAIMER
-    ========================= */
+    ========================== */
 
     .disclaimer-section {
       background: #f8fafc;
@@ -592,9 +657,10 @@
       font-size: 14px;
     }
 
+
     /* =========================
        SOCIAL
-    ========================= */
+    ========================== */
 
     .social-section {
       text-align: center;
@@ -621,9 +687,10 @@
       background: #f8fafc;
     }
 
+
     /* =========================
        FINAL CTA
-    ========================= */
+    ========================== */
 
     .final-cta {
       background: #101828;
@@ -676,9 +743,10 @@
       transform: translateY(-2px);
     }
 
+
     /* =========================
        FOOTER
-    ========================= */
+    ========================== */
 
     footer {
       background: #0b1220;
@@ -688,9 +756,10 @@
       font-size: 13px;
     }
 
+
     /* =========================
-       MOBILE
-    ========================= */
+       TABLET
+    ========================== */
 
     @media (max-width: 900px) {
 
@@ -708,6 +777,10 @@
         margin-right: auto;
       }
 
+      .hero-buttons {
+        justify-content: center;
+      }
+
       .problem-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -715,7 +788,13 @@
       .learning-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
 
     @media (max-width: 600px) {
 
@@ -733,6 +812,17 @@
 
       .hero-subtitle {
         font-size: 16px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 22px;
+      }
+
+      .hero-buy-btn,
+      .hero-offer-btn {
+        width: 100%;
       }
 
       .ebook-shadow {
@@ -780,20 +870,26 @@
         width: 100%;
         max-width: 400px;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
+
 
   <!-- =========================
        HERO
   ========================== -->
 
   <header class="hero">
+
     <div class="container">
 
       <div class="hero-grid">
+
 
         <div class="hero-content">
 
@@ -801,21 +897,49 @@
             PRACTICAL TRADING WORKBOOK
           </div>
 
+
           <h1>
             शेअर मार्केट
             <span>PRACTICAL MARATHI</span>
           </h1>
+
 
           <p class="hero-subtitle">
             शून्यापासून Practical Trading पर्यंतचा
             मराठी मार्गदर्शक
           </p>
 
+
           <p class="topic-line">
             Basics • Charts • Intraday • Risk Management • Trading Psychology
           </p>
 
+
+          <!-- TOP PAYMENT BUTTONS -->
+
+          <div class="hero-buttons">
+
+            <a
+              href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
+              class="hero-buy-btn"
+            >
+              🛒 ₹400 मध्ये eBook खरेदी करा
+            </a>
+
+
+            <a
+              href="#offer"
+              class="hero-offer-btn"
+            >
+              📘 eBook बद्दल अधिक जाणून घ्या
+            </a>
+
+          </div>
+
         </div>
+
+
+        <!-- EBOOK -->
 
         <div class="ebook-area">
 
@@ -835,11 +959,13 @@
                 onerror="this.style.display='none'; document.getElementById('coverPlaceholder').style.display='block';"
               >
 
+
               <div
                 class="cover-placeholder"
                 id="coverPlaceholder"
                 style="display:none;"
               >
+
                 <div class="cover-top">
                   PRACTICAL TRADING WORKBOOK
                 </div>
@@ -853,6 +979,7 @@
                   शून्यापासून Practical Trading पर्यंतचा
                   मराठी मार्गदर्शक
                 </p>
+
               </div>
 
             </div>
@@ -861,10 +988,13 @@
 
         </div>
 
+
       </div>
 
     </div>
+
   </header>
+
 
 
   <!-- =========================
@@ -883,10 +1013,12 @@
           पण सुरुवात कुठून करायची?
         </h2>
 
+
         <p>
           शेअर मार्केटमध्ये सुरुवात करताना अनेकांना
           एकच प्रश्न पडतो —
         </p>
+
 
         <div class="questions">
 
@@ -908,11 +1040,17 @@
 
         </div>
 
+
         <p style="margin-top:25px;">
-          <strong>शेअर मार्केट PRACTICAL MARATHI</strong>
+
+          <strong>
+            शेअर मार्केट PRACTICAL MARATHI
+          </strong>
+
           हे eBook तुम्हाला Trading समजून घेण्यासाठी
           एक structured आणि practical मार्गदर्शन देण्यासाठी
           तयार करण्यात आले आहे.
+
         </p>
 
       </div>
@@ -920,6 +1058,7 @@
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -934,48 +1073,66 @@
         तुम्हालाही हे प्रश्न पडतात का?
       </h2>
 
+
       <div class="problem-grid">
 
+
         <div class="problem-card">
+
           <p>
             😕 शेअर मार्केटमध्ये सुरुवात कुठून करावी
             हे कळत नाही?
           </p>
+
         </div>
 
+
         <div class="problem-card">
+
           <p>
             😕 Chart पाहतो, पण त्यातून काय समजायचं
             हे कळत नाही?
           </p>
+
         </div>
 
+
         <div class="problem-card">
+
           <p>
             😕 Intraday Trading करताना योग्य
             Planning होत नाही?
           </p>
+
         </div>
 
+
         <div class="problem-card">
+
           <p>
             😕 Stop Loss, Risk Management आणि
             Position Size याबद्दल confusion आहे?
           </p>
+
         </div>
 
+
         <div class="problem-card">
+
           <p>
             😕 Trading Psychology मुळे वारंवार
             चुकीचे निर्णय घेतले जातात?
           </p>
+
         </div>
+
 
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -992,15 +1149,19 @@
           ✅ मग हे eBook तुमच्यासाठी आहे
         </h2>
 
+
         <p>
+
           <strong>
             Practical Trading समजून घेण्यासाठी तयार केलेले eBook
           </strong>
+
           <br>
 
           Theory पेक्षा Practical Understanding वर भर देऊन
           Trading च्या महत्त्वाच्या संकल्पना सोप्या मराठीत
           समजून घेण्याचा प्रयत्न.
+
         </p>
 
       </div>
@@ -1008,6 +1169,7 @@
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1022,13 +1184,19 @@
         तुम्हाला या eBook मधून काय शिकायला मिळेल?
       </h2>
 
+
       <div class="learning-grid">
+
 
         <div class="learning-card">
 
-          <div class="learning-icon">📊</div>
+          <div class="learning-icon">
+            📊
+          </div>
 
-          <h3>Trading Basics</h3>
+          <h3>
+            Trading Basics
+          </h3>
 
           <p>
             शेअर मार्केट आणि Trading ची
@@ -1040,9 +1208,13 @@
 
         <div class="learning-card">
 
-          <div class="learning-icon">📈</div>
+          <div class="learning-icon">
+            📈
+          </div>
 
-          <h3>Charts समजून घ्या</h3>
+          <h3>
+            Charts समजून घ्या
+          </h3>
 
           <p>
             Price Chart कसा वाचायचा आणि
@@ -1054,9 +1226,13 @@
 
         <div class="learning-card">
 
-          <div class="learning-icon">⚡</div>
+          <div class="learning-icon">
+            ⚡
+          </div>
 
-          <h3>Intraday Trading</h3>
+          <h3>
+            Intraday Trading
+          </h3>
 
           <p>
             Intraday Trading करताना Planning
@@ -1068,9 +1244,13 @@
 
         <div class="learning-card">
 
-          <div class="learning-icon">🛡️</div>
+          <div class="learning-icon">
+            🛡️
+          </div>
 
-          <h3>Risk Management</h3>
+          <h3>
+            Risk Management
+          </h3>
 
           <p>
             Trade मध्ये Risk कसा नियंत्रित करायचा
@@ -1082,9 +1262,13 @@
 
         <div class="learning-card">
 
-          <div class="learning-icon">🧠</div>
+          <div class="learning-icon">
+            🧠
+          </div>
 
-          <h3>Trading Psychology</h3>
+          <h3>
+            Trading Psychology
+          </h3>
 
           <p>
             Fear, Greed आणि Emotional Decisions
@@ -1096,9 +1280,13 @@
 
         <div class="learning-card">
 
-          <div class="learning-icon">📝</div>
+          <div class="learning-icon">
+            📝
+          </div>
 
-          <h3>Practical Approach</h3>
+          <h3>
+            Practical Approach
+          </h3>
 
           <p>
             Trading शिकताना वापरता येईल असा
@@ -1107,11 +1295,13 @@
 
         </div>
 
+
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1126,41 +1316,51 @@
         eBook कोणासाठी आहे?
       </h2>
 
+
       <p class="section-description">
         हे eBook विशेषतः त्यांच्यासाठी आहे ज्यांना —
       </p>
 
+
       <div class="audience-list">
+
 
         <div class="audience-item">
           ✅ Trading ची सुरुवात करायची आहे
         </div>
 
+
         <div class="audience-item">
           ✅ मराठीतून Trading समजून घ्यायची आहे
         </div>
+
 
         <div class="audience-item">
           ✅ Charts आणि Trading Basics शिकायचे आहेत
         </div>
 
+
         <div class="audience-item">
           ✅ Intraday बद्दल Practical Understanding हवी आहे
         </div>
+
 
         <div class="audience-item">
           ✅ Risk Management समजून घ्यायचे आहे
         </div>
 
+
         <div class="audience-item">
           ✅ Trading मध्ये Discipline तयार करायचे आहे
         </div>
+
 
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1175,37 +1375,46 @@
         तुम्हाला काय मिळेल?
       </h2>
 
+
       <div class="get-box">
 
         <div class="get-list">
+
 
           <div class="get-item">
             📘 <strong>1 Complete eBook</strong>
           </div>
 
+
           <div class="get-item">
             🇮🇳 मराठीत Practical Trading Guide
           </div>
+
 
           <div class="get-item">
             📊 Trading Basics + Charts
           </div>
 
+
           <div class="get-item">
             ⚡ Intraday Concepts
           </div>
+
 
           <div class="get-item">
             🛡️ Risk Management
           </div>
 
+
           <div class="get-item">
             🧠 Trading Psychology
           </div>
 
+
           <div class="get-item">
             ♾️ Lifetime Digital Access
           </div>
+
 
         </div>
 
@@ -1214,6 +1423,7 @@
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1226,29 +1436,36 @@
 
       <div class="offer-box">
 
+
         <div class="offer-label">
           🔥 LAUNCH OFFER
         </div>
+
 
         <div class="offer-title">
           शेअर मार्केट PRACTICAL MARATHI
         </div>
 
+
         <div class="price-old">
           ₹999
         </div>
+
 
         <div class="price-new">
           ₹400
         </div>
 
+
         <p class="offer-text">
           आज फक्त ₹400 मध्ये
         </p>
 
+
         <div class="offer-product">
           📘 शेअर मार्केट PRACTICAL MARATHI
         </div>
+
 
 
         <!--
@@ -1257,12 +1474,14 @@
 
         <div class="cta-buttons">
 
+
           <a
             href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
             class="buy-btn primary"
           >
             🛒 ₹400 मध्ये खरेदी करा
           </a>
+
 
           <a
             href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
@@ -1271,6 +1490,7 @@
             📘 eBook खरेदी करा
           </a>
 
+
           <a
             href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
             class="buy-btn"
@@ -1278,11 +1498,14 @@
             🚀 लगेच सुरू करा — ₹400
           </a>
 
+
         </div>
+
 
         <div class="payment-note">
           🔒 Secure Checkout • Digital Product
         </div>
+
 
       </div>
 
@@ -1291,11 +1514,13 @@
   </section>
 
 
+
   <!-- =========================
        PAYMENT SUCCESS
   ========================== -->
 
-  
+   
+
 
 
   <!-- =========================
@@ -1308,35 +1533,81 @@
 
       <div class="trust-grid">
 
-        <div class="trust-item">
-          <div class="trust-icon">🔒</div>
-          <strong>Secure Payment</strong>
-          <span>Safe Checkout</span>
-        </div>
 
         <div class="trust-item">
-          <div class="trust-icon">⚡</div>
-          <strong>Instant Digital Access</strong>
-          <span>Easy Access</span>
+
+          <div class="trust-icon">
+            🔒
+          </div>
+
+          <strong>
+            Secure Payment
+          </strong>
+
+          <span>
+            Safe Checkout
+          </span>
+
         </div>
 
-        <div class="trust-item">
-          <div class="trust-icon">♾️</div>
-          <strong>Lifetime Access</strong>
-          <span>One Time Purchase</span>
-        </div>
 
         <div class="trust-item">
-          <div class="trust-icon">📱</div>
-          <strong>Mobile Friendly</strong>
-          <span>Read Anywhere</span>
+
+          <div class="trust-icon">
+            ⚡
+          </div>
+
+          <strong>
+            Instant Digital Access
+          </strong>
+
+          <span>
+            Easy Access
+          </span>
+
         </div>
+
+
+        <div class="trust-item">
+
+          <div class="trust-icon">
+            ♾️
+          </div>
+
+          <strong>
+            Lifetime Access
+          </strong>
+
+          <span>
+            One Time Purchase
+          </span>
+
+        </div>
+
+
+        <div class="trust-item">
+
+          <div class="trust-icon">
+            📱
+          </div>
+
+          <strong>
+            Mobile Friendly
+          </strong>
+
+          <span>
+            Read Anywhere
+          </span>
+
+        </div>
+
 
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1349,26 +1620,33 @@
 
       <div class="disclaimer-box">
 
+
         <h3>
           ⚠️ महत्त्वाची सूचना
         </h3>
 
+
         <p>
+
           हे eBook केवळ शैक्षणिक आणि माहितीच्या उद्देशाने
           तयार केले आहे. यात कोणत्याही प्रकारच्या निश्चित
           नफा किंवा निश्चित Returns ची हमी दिलेली नाही.
+
           <br><br>
 
           Trading/Investing मध्ये Market Risk असतो.
           कोणताही निर्णय घेण्यापूर्वी स्वतःचे Research
           आणि योग्य Risk Management करा.
+
         </p>
+
 
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1379,16 +1657,20 @@
 
     <div class="container">
 
+
       <h2 class="section-title">
         आमच्याशी Connect व्हा
       </h2>
+
 
       <p class="section-description">
         Trading, Stock Market आणि नवीन Learning Content
         साठी Follow करा.
       </p>
 
+
       <div class="social-buttons">
+
 
         <a
           href="https://www.instagram.com/digital.pustakalay?stkn=bWo4emhvZjUzYjY2"
@@ -1397,22 +1679,15 @@
           class="social-btn"
         >
           📸 Instagram
-        </a>
+        
 
-        <a
-          href="YOUR_FACEBOOK_URL"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="social-btn"
-        >
-          👍 Facebook
-        </a>
 
       </div>
 
     </div>
 
   </section>
+
 
 
   <!-- =========================
@@ -1423,13 +1698,16 @@
 
     <div class="container">
 
+
       <h2>
         Trading शिकण्याची सुरुवात आज करा.
       </h2>
 
+
       <p>
         शेअर मार्केट PRACTICAL MARATHI
       </p>
+
 
       <div class="final-price">
 
@@ -1437,22 +1715,26 @@
           ₹999
         </span>
 
+
         <span class="final-new">
           ₹400
         </span>
 
       </div>
 
+
       <a
-        href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
+        href="YOUR_PAYMENT_LINK_HERE"
         class="final-btn"
       >
         🚀 लगेच खरेदी करा — ₹400
       </a>
 
+
     </div>
 
   </section>
+
 
 
   <!-- =========================
